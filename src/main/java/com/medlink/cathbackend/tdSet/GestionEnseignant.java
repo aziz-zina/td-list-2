@@ -1,4 +1,4 @@
-package com.medlink.cathbackend;
+package com.medlink.cathbackend.tdSet;
 
 public interface GestionEnseignant{
     public void ajouterEnseignant(Enseignant e);

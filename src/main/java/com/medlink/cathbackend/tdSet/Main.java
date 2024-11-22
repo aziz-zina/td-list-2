@@ -1,4 +1,4 @@
-package com.medlink.cathbackend;
+package com.medlink.cathbackend.tdSet;
 
 public class Main {
     public static void main(String[] args) {
