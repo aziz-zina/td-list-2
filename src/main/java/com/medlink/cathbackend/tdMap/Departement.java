@@ -1,18 +1,16 @@
-package com.medlink.cathbackend;
+package com.medlink.cathbackend.tdMap;
 
-public class Enseignant {
+public class Departement {
     private int id;
     private String nom;
-    private String prenom;
 
     // Constructeur sans paramètre
-    public Enseignant() {}
+    public Departement() {}
 
     // Constructeur avec paramètres
-    public Enseignant(int id, String nom, String prenom) {
+    public Departement(int id, String nom) {
         this.id = id;
         this.nom = nom;
-        this.prenom = prenom;
     }
 
     // Getters et Setters
@@ -32,30 +30,21 @@ public class Enseignant {
         this.nom = nom;
     }
 
-    public String getPrenom() {
-        return prenom;
-    }
-
-    public void setPrenom(String prenom) {
-        this.prenom = prenom;
-    }
-
     // Redéfinition de la méthode equals
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Enseignant that = (Enseignant) o;
+        Departement that = (Departement) o;
         return id == that.id;
     }
 
     // Redéfinition de la méthode toString
     @Override
     public String toString() {
-        return "Enseignant{" +
+        return "Departement{" +
                 "id=" + id +
                 ", nom='" + nom + '\'' +
-                ", prenom='" + prenom + '\'' +
                 '}';
     }
 }
